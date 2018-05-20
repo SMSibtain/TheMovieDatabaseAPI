@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screenBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/footerButton"
+            android:layout_marginLeft="@dimen/margin_38"
+            android:layout_marginRight="@dimen/margin_38"
+            android:onClick="getNowPlayingMovies"
+            android:text="@string/get_now_playing_movies" />
+
+    </LinearLayout>
+</layout>

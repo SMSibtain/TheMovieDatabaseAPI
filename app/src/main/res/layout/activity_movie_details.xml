@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="movieDetails"
+            type="com.android.themoviedatabaseapi.model.response.MovieDetails" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="glide"
+            type="com.bumptech.glide.Glide" />
+
+        <variable
+            name="networkConstants"
+            type="com.android.themoviedatabaseapi.network.NetworkConstants" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screenBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollViewLS2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_38"
+                    android:layout_marginRight="@dimen/margin_38"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgViewMovie"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/movie"
+                            android:tint="@color/labelColor"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/txtViewTitle"
+                            style="@style/labelStyleValueMultiLine"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginTop="@dimen/margin_15"
+                            android:text='@{movieDetails.title}' />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/labeltxtViewGenre"
+                        style="@style/labelStyle"
+                        android:text="@string/genres"
+                        android:visibility="@{movieDetails.genres != null ? View.VISIBLE: View.GONE}" />
+
+                    <TextView
+                        android:id="@+id/txtViewGenre"
+                        style="@style/labelStyleValueMultiLine"
+                        android:text="@string/enter_genres"
+                        android:visibility="@{movieDetails.genres != null ? View.VISIBLE: View.GONE}" />
+
+                    <TextView
+                        android:id="@+id/labeltxtViewPopularity"
+                        style="@style/labelStyle"
+                        android:text="@string/popularity"
+                        android:visibility="@{movieDetails.popularity != 0.0 ? View.VISIBLE: View.GONE}" />
+
+
+                    <TextView
+                        android:id="@+id/txtViewPopularity"
+                        style="@style/labelStyleValue"
+                        android:text="@{``+movieDetails.popularity}"
+                        android:visibility="@{movieDetails.popularity != 0.0 ? View.VISIBLE: View.GONE}" />
+
+                    <TextView
+                        android:id="@+id/labeltxtViewVoteAverage"
+                        style="@style/labelStyle"
+                        android:text="@string/vote_average"
+                        android:visibility="@{movieDetails.vote_average != 0.0f ? View.VISIBLE: View.GONE}" />
+
+
+                    <TextView
+                        android:id="@+id/txtViewVoteAverage"
+                        style="@style/labelStyleValue"
+                        android:text="@{``+movieDetails.vote_average}"
+                        android:visibility="@{movieDetails.vote_average != 0.0f ? View.VISIBLE: View.GONE}" />
+
+
+                    <TextView
+                        android:id="@+id/labeltxtViewOverview"
+                        style="@style/labelStyle"
+                        android:text="@string/overview"
+                        android:visibility='@{movieDetails.overview != "" ? View.VISIBLE: View.GONE}' />
+
+                    <TextView
+                        android:id="@+id/txtViewOverview"
+                        style="@style/labelStyleValueMultiLine"
+                        android:text='@{movieDetails.overview}'
+                        android:visibility='@{movieDetails.overview != "" ? View.VISIBLE: View.GONE}' />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTransNext"
+            style="@style/footerButton"
+            android:layout_marginTop="@dimen/margin_10"
+            android:onClick="okButtonClicked"
+            android:text="Ok" />
+    </LinearLayout>
+
+</layout>

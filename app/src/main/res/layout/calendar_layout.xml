@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calendar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:layout_marginEnd="@dimen/margin_12"
+    android:layout_marginLeft="@dimen/margin_5"
+    android:layout_marginRight="@dimen/margin_12"
+    android:layout_marginStart="@dimen/margin_5"
+    android:clickable="true"
+    android:focusable="true">
+
+    <EditText
+        android:id="@+id/eTextCalendarDate"
+        style="@style/userIdStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:enabled="false"
+        android:hint="YYYY-MM-DD"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <ImageView
+        android:id="@+id/calenderImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:srcCompat="@drawable/ic_calander"
+        tools:ignore="VectorDrawableCompat" />
+</LinearLayout>

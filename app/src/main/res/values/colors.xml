@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008269</color>
+    <color name="colorPrimaryDark">#006054</color>
+    <color name="colorAccent">#009688</color>
+
+    <color name="hblColor">#008269</color>
+
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#F2F2D6</color>
+
+
+    <color name="selectorGray">#3B9987</color>
+
+    <!--<color name="dividerColor">#2a6c60</color>-->
+
+    <color name="selector_green_pressed">#4400C853</color>
+    <color name="material_teal_500">#009688</color>
+    <color name="selector_green_focused">#2200C853</color>
+
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="dividerGray">#CBDAD7</color>
+    <color name="headingText">#008269</color>
+    <color name="lightGreen">#DFF4E5</color>
+    <color name="lightRed">#edd8d8</color>
+
+    <color name="dividerHeader">#F7FCF8</color>
+    <color name="dividerFooter">#D5D5D5</color>
+    <color name="maroon">#ab5c5b</color>
+
+
+    <color name="textColor1">#9E9E9E</color>
+
+    <color name="nextSubmitTxt">#008269</color>
+    <color name="HeadingText">#008269</color>
+    <color name="subHeadingText">#008269</color>
+    <color name="appTextColor">#008269</color>
+    <color name="policyBackground">#f2f2d6</color>
+
+    <color name="keyTxtGeneralColor">#566167</color>
+    <color name="valueTxtGeneralColor">#008269</color>
+
+    <color name="dColor">#CBDAD7</color>
+    <color name="colorForNewButton">#586168</color>
+    <color name="colorBeneItem">#F1F5F8</color>
+    <color name="screenBackground">#F1F5F8</color>
+
+    <color name="themeColor">#F1F5F8</color>
+    <color name="footerColor">#576168</color>
+
+    <color name="colorBeneItemDivider">#C2D2D1</color>
+
+
+    <color name="lightGray">#F1F5F8</color>
+    <!--<color name="textColor">#566167</color>-->
+
+    <!--
+        New Colors according to new theme
+    -->
+    <color name="labelColor">#576167</color>
+    <color name="screenBackgroundColor">#F1F5F8</color>
+    <color name="textColor">#008269</color>
+    <color name="dividerColor">#C2D2D1</color>
+    <color name="yellowColor">#f1f2d9</color>
+    <color name="confirmationLabelColor">#cadfdd</color>
+    <color name="redColor">#ab5c5b</color>
+
+    <color name="navTitleColor">#576065</color>
+    <color name="backArrowColor">#576167</color>
+    <color name="searchLayoutColor">#F2FBF6</color>
+    <color name="schedulepayment_pkr">#EAEFF3</color>
+    <color name="navigationBackgroundColor">#EAEFF3</color>
+    <color name="navDividerColor">#E8EAE9</color>
+</resources>
+
+
+
+

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TheMovieDatabaseAPI</string>
+    <string name="from_date">From Date</string>
+    <string name="enter_from_date">Enter from date</string>
+    <string name="enter_to_date">Enter to date</string>
+    <string name="to_date">To Date</string>
+    <string name="comments">Comments</string>
+    <string name="enter_comments">Enter Comments</string>
+    <string name="popularity">Popularity</string>
+    <string name="enter_popularity">Enter Popularity</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="enter_vote_average">Enter Vote Average</string>
+    <string name="overview">Overview</string>
+    <string name="enter_overview">Enter Overview</string>
+    <string name="get_now_playing_movies">Get Now Playing Movies</string>
+    <string name="title">Title</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="genres">Genres</string>
+    <string name="enter_genres">Enter Genres</string>
+    <string name="loadingDialogMessage">Processing&#8230;</string>
+    <string name="connectionError">Internet connection error</string>
+
+
+</resources>
